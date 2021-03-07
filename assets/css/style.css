@@ -390,15 +390,27 @@ select {
 
 .logo {
 	padding: 25px;
+  float: left;
+  width: 100%;
+  border-bottom: 3px solid red;
+  background: url(https://w.wallhaven.cc/full/5d/wallhaven-5dm3y1.jpg) no-repeat;
+　background-size:cover;
+　background-position: center center;
 }
 
 .logo__link {
 	display: inline-block;
+  float: left;
 }
 
 .logo__item {
 	display: inline-block;
 	vertical-align: middle;
+  float: left;
+}
+
+.logo__item_r {
+  float: right;
 }
 
 .logo__img {
@@ -428,6 +440,11 @@ select {
 	font-weight: 500;
 	line-height: 1;
 	color: #000;
+}
+
+.logo__title_fr {
+  font-size: 0.875rem;
+  font-family: 'DotGothic16';
 }
 
 .logo__tagline {
@@ -941,6 +958,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	font-size: 13px;
 	font-size: .8125rem;
 }
+
 
 .pager__item {
 	-webkit-flex: 1 1 50%;

@@ -39,7 +39,7 @@
 		{{ template "_internal/google_analytics_async.html" . }}
 	{{- end }}
 </head>
-<body class="body">
+<body class="body" onload="onLoad()">
 	<div class="container container--outer">
 		{{ partial "header" . }}
 		<div class="wrapper flex">
