@@ -406,7 +406,6 @@ select {
 }
 
 .logo__text {
-	text-transform: uppercase;
 }
 
 .logo--mixed .logo__item {
@@ -419,13 +418,14 @@ select {
 }
 
 .logo--mixed .logo__text {
-	padding: 0 1rem;
+	padding: 0rem;
 }
 
 .logo__title {
 	font-size: 32px;
-	font-size: 2rem;
-	font-weight: 700;
+	font-size: 2.75rem;
+  font-family: 'DotGothic16','Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 500;
 	line-height: 1;
 	color: #000;
 }
@@ -875,7 +875,8 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 .list__title {
 	font-size: 20px;
-	font-size: 1.25rem;
+  font-size: 1.75rem;
+  text-transform: uppercase;
 }
 
 .list__meta {
