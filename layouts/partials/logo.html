@@ -16,9 +16,23 @@
 			{{ with $logoTitle -}}
 				<div class="logo__item logo__text">
 					<div class="logo__title">{{ . }}</div>
-					{{ with $logoSubtitle }}<div class="logo__tagline">{{ . }}</div>{{ end }}
 				</div>
 			{{- end }}
 		</a>
+    {{- if .Site.Menus.main }}
+    <ul class="logo__item logo__item_r logo__text">
+    {{- range .Site.Menus.main }}
+    {{- if .Name }}
+    <li>
+    <a href="{{ .URL }}">
+    <div>
+      <div class="logo__title_fr">{{ .Name }}</div>
+    </div>
+    </a>
+    </li>
+    {{- end }}
+    {{- end }}
+    </ul>
+    {{- end }}
 	</div>
 {{- end }}
