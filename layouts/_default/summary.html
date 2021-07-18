@@ -7,11 +7,13 @@
 	</figure>
 	{{- end }}
 	<header class="list__header">
-		<h2 class="list__title post__title">
+    <blockquote class="headline">
+    <h2 class="list__title post__title">
 			<a href="{{ .RelPermalink }}" rel="bookmark">
 			{{ .Title }}
 			</a>
 		</h2>
+    </blockquote>
 		{{- with .Params.lead }}
 		<p class="list__lead post__lead">{{ . }}</p>
 		{{- end }}
@@ -25,7 +27,7 @@
 	{{- if .Site.Params.readmore }}
 	{{- if .Truncated }}
 	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="{{ .RelPermalink }}">{{ T "read_more" }}</a>
+		<a class="list__footer-readmore" href="{{ .RelPermalink }}">{{ T "read_more" }}</a>
 	</div>
 	{{- end }}
 	{{- end }}
